@@ -41,7 +41,7 @@ database_url = os.getenv("DB_NAME")
 
 register_tortoise(
     app,
-    db_url=f"sqlite://{db_name}.sqlite3",
+    db_url=f"sqlite://{db_name}.db",
     modules={"models": ["posts.models"]},
     generate_schemas=True,
     add_exception_handlers=True,
