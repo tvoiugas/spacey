@@ -35,9 +35,11 @@ Tortoise.init_models(["posts.models"], "models")
 PostPydantic = pydantic_model_creator(
     Post,
     name = "Post",
+    from_attributes=True
 )
 
 CommentPydantic = pydantic_model_creator(
     Comment,
     name = "Comment",
+    from_attributes=True
 )
