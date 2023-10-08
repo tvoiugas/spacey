@@ -1,4 +1,4 @@
-tortoise-orm==0.17.0
+tortoise-orm==0.16.18
 python-dotenv==0.21.1
 fastapi-redis==0.1.11
 uvicorn==0.22.0
