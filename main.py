@@ -41,7 +41,7 @@ database_url = os.getenv("DB_NAME")
 
 register_tortoise(
     app,
-    db_url=f"sqlite://{db_name}.sqlite",
+    db_url=f"sqlite://{db_name}.sqlite3",
     modules={"models": ["posts.models"]},
     generate_schemas=True,
     add_exception_handlers=True,
@@ -51,4 +51,4 @@ app.include_router(post_router)
 
 if __name__ == "__main__":
 	import uvicorn
-	uvicorn.run(app, host="0.0.0.0", port = 8000)
+	uvicorn.run(app, host="localhost", port = 8000)
